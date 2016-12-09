@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div>
+        <p>请输入正确学生分数以便查询等级</p>
+        <form>
+            <input type="text" id="score">
+            <input type="button" id="btn" value="查询" onclick="demo()">
+        </form>
+    </div>
+    <!--不能实现的方法之二
+    <div class="result">查询结果</div>-->
+    <script>
+    /*定义函数*/
+    function demo() {
+        try {
+            /*调用input的id去得到输入值*/
+            var i = document.getElementById("score").value; /*调用input的id去得到输入值*/
+            /*采用if。。。else语句进行判断*/
+            if (!i || isNaN(i)) {
+                alert("请输入正确学生分数以便查询等级")
+            } else if (i >= 90 && i <= 100) {
+                alert("一等生");
+            } else if (i >= 80 && i < 90) {
+                alert("二等生");
+            } else if (i >= 70 && i < 80) {
+                alert("三等生");
+            } else if (i >= 60 && i < 70) {
+                alert("四等生");
+            } else if (i >= 50 && i < 60) {
+                alert("五等生");
+            } else if (i >= 40 && i < 50) {
+                alert("六等生");
+            } else if (i >= 30 && i < 40) {
+                alert("七等生");
+            } else if (i >= 20 && i < 30) {
+                alert("八等生");
+            } else if (i >= 10 && i < 20) {
+                alert("九等生");
+            } else if (i >= 0 && i < 10) {
+                alert("十等生");
+            } else {
+                alert("请输入正确学生分数以便查询等级")
+            }
+
+        } catch (err) {
+            alert(err);
+        }
+    }
+    /*不能实现的方法之二
+    function demo() {
+        try {
+
+            var i = document.getElementById("score").value;
+
+            if (!i || isNaN(i)) {
+                document.getElementById("result").innerHTML = "请输入正确的学生成绩";
+            } else if (i >= 90 && i < 100) {
+                document.getElementById("result").innerHTML = "一等生";
+            } else if (i >= 80 && i < 90) {
+                document.getElementById("result").innerHTML = "二等生";
+            } else if (i >= 70 && i < 80) {
+                document.getElementById("result").innerHTML = "三等生";
+            } else if (i >= 60 && i < 70) {
+                document.getElementById("result").innerHTML = "四等生";
+            } else if (i >= 50 && i < 60) {
+                document.getElementById("result").innerHTML = "五等生";
+            } else if (i >= 40 && i < 50) {
+                document.getElementById("result").innerHTML = "六等生";
+            } else if (i >= 30 && i < 40) {
+                document.getElementById("result").innerHTML = "七等生";
+            } else if (i >= 20 && i < 30) {
+                document.getElementById("result").innerHTML = "八等生";
+            } else if (i >= 10 && i < 20) {
+                document.getElementById("result").innerHTML = "九等生";
+            } else {
+                document.getElementById("result").innerHTML = "十等生";
+            }
+
+        } catch (err) {
+            alert(err);
+        }
+    }*/
+    </script>
+</body>
+
+</html>

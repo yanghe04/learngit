@@ -1,0 +1,20 @@
+div {
+    height: 200px;
+    width: 500px;
+    background-color: #4ECB4C;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 32px;
+}
+
+#score {
+    width: 200px;
+    height: 40px;
+    font-size: 28px;
+}
+
+#btn {
+    width: 100px;
+    height: 40px;
+    font-size: 28px;
+}
