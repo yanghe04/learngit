@@ -1,0 +1,1233 @@
+/*初始化样式*/
+
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: "SimSun", "宋体", "Arial Narrow";
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+select,
+input,
+img,
+select {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*定义基础变量*/
+
+@color_1: #F5F5F5;
+@color_2: #35B558;
+@color_3: #FFFFFF;
+@color_4: #fafafa;
+@color_5: #333;
+@color_6: #ECECEC;
+@color_7: #666;
+@color_8: #808080;
+@color_9: #E9E9E9;
+@color_10: #050505;
+@color_11: #CCC;
+@color_12: #f0f0f0;
+@color_13: #ff5c00;
+@color_14: #e0e0e0;
+@color_15: #F3F2F2;
+@color_16: #EEEEEE;
+@width-base: 10px;
+@mun: 100;
+@font:Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+
+/*网页整体边框清楚和背景*/
+
+body {
+    min-width: @width-base*100;
+    background-color: @color_1;
+}
+
+
+/*头部宽高及背景*/
+
+.header {
+    height: @width-base*6;
+    width: 100%;
+    background-color: @color_1+#0a0a0a;
+}
+
+
+/*头部logo设置*/
+
+.logo-img {
+    width: @width-base*10.9;
+    height: @width-base*4;
+    float: left;
+    margin: @width-base*1 @width-base*0.5;
+}
+
+.container {
+    width: @width-base*99;
+    height: @width-base*6;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/*菜单*/
+
+.nav {
+    overflow: hidden;
+    width: @width-base*45;
+    height: @width-base*9.6;
+    margin-left: @width-base*3;
+    float: left;
+    ul li {
+        float: left;
+        a {
+            color: #000000;
+            width: @width-base*10;
+            font-size: @width-base*1.4;
+            text-align: center;
+            line-height: @width-base*6;
+            display: block;
+            text-decoration: none;
+            font-family: @font;
+            &:hover {
+                color: @color_2
+            }
+        }
+    }
+}
+
+
+/*首页标签颜色*/
+
+#first {
+    color: @color_2;
+}
+
+
+/*其余标签鼠标变色*/
+
+
+/*二级下拉设置*/
+
+.nav ul li ul {
+    position: absolute;
+    display: none;
+    width: @width-base*28;
+    height: auto;
+    background-color: @color_3;
+    margin-top: @width-base*0.2;
+    z-index: @mun*10;
+}
+
+
+/*第一个二级下拉内部设置*/
+
+.inner_1 h6 {
+    padding-left: @width-base*2;
+    background: @color_4;
+    height: @width-base*2.8;
+    line-height: @width-base*2.8;
+    font-weight: @mun*3;
+    text-decoration: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/*二级内部详细设置*/
+
+.second_menu {
+    display: block;
+    height: @width-base*3.8;
+    line-height: @width-base*3;
+    color: @color_5;
+    text-decoration: none;
+    margin-top: @width-base*0.8;
+    padding-left: @width-base*2;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-size: @width-base*1.2;
+    list-style: none;
+    &:hover {
+        color: @color_2;
+        background-color: @color_6;
+    }
+}
+
+.nav ul li ul li {
+    float: none;
+    a {
+        font-family: @font;
+    }
+}
+
+.nav ul li:hover ul {
+    display: block;
+}
+
+.arrow {
+    position: relative;
+    top: @width-base*2.4;
+    width: @width-base*0.8;
+    height: @width-base*0.8;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    display: inline-block;
+    transform: rotate(-135deg);
+    margin-bottom: @width-base*0.2;
+    &:hover {
+        width: @width-base*0.8;
+        height: @width-base*0.8;
+        border-top: 1px solid @color_2;
+        border-left: 1px solid @color_2;
+    }
+}
+
+
+/*登录部分设置*/
+
+.register {
+    height: @width-base*6;
+    width: @width-base*18;
+    float: right;
+}
+
+.search_icon {
+    height: @width-base*6;
+    width: @width-base*1.7;
+    top: @width-base*2.2;
+    position: relative;
+    display: inline-block;
+    margin-left: @width-base*2.5;
+    cursor: pointer;
+    background: url(./img/search.png) 0 0 no-repeat;
+    background-size: @width-base*1.7 @width-base*1.7;
+    &hover {
+        background: url(./img/search2.png) 0 0 no-repeat;
+        background-size: @width-base*1.7 @width-base*1.7
+    }
+}
+
+.mobile_icon {
+    height: @width-base*6;
+    width: @width-base*1.7;
+    top: @width-base*2.2;
+    display: inline-block;
+    margin-left: @width-base*2.5;
+    cursor: pointer;
+    background: url(./img/mobile_1.png) 0 0 no-repeat;
+    background-size: @width-base*1.7 @width-base*1.7;
+    background-position: 0 0;
+    position: relative;
+    &:hover {
+        top: 22;
+        background: url(./img/mobile_2.png) 0 0 no-repeat;
+        background-size: @width-base*1.7 @width-base*1.7;
+        background-position: 0 0;
+        .submenu {
+            display: block;
+        }
+    }
+}
+
+.submenu {
+    right: -@width-base*5;
+    padding: @width-base 0;
+    position: absolute;
+    z-index: @mun*12;
+    top: @width-base*3;
+    display: none;
+    img {
+        width: @width-base*12;
+    }
+}
+
+.top-icon {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: @width-base*5.2;
+    width: @width-base*1.5;
+    height: @width-base*1.5;
+    border-top: 1px solid @color_6;
+    border-left: 1px solid @color_6;
+    display: inline-block;
+    background: @color_3;
+}
+
+.register_icon {
+    height: @width-base*6;
+    width: @width-base*1.7;
+    top: @width-base*2.2;
+    position: relative;
+    display: inline-block;
+    margin-left: @width-base*2.5;
+    cursor: pointer;
+    background: url(./img/sign_man.png) 0 0 no-repeat;
+    background-size: @width-base*1.7 @width-base*1.7;
+    background-position: 0 0;
+}
+
+.submenu2 {
+    padding: @width-base 0;
+    background: @color_3;
+    position: absolute;
+    width: @width-base*12;
+    height: @width-base*17.6;
+    z-index: @mun*12;
+    top: @width-base*4;
+    right: -@width-base*5;
+    display: none;
+    dd {
+        width: @width-base*11;
+        height: @width-base*3.6;
+        text-align: left;
+        font-size: @width-base*1.2;
+        line-height: @width-base*3.5;
+        vertical-align: middle;
+        margin: 0;
+        padding-left: @width-base;
+        a {
+            color: @color_7;
+            margin: 0 @width-base;
+            &:hover {
+                color: @color_2
+            }
+        }
+    }
+}
+
+.top-icon2 {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: -@width-base*0.9;
+    right: @width-base*5.2;
+    width: @width-base*1.5;
+    height: @width-base*1.5;
+    border-top: 1px solid @color_6;
+    border-left: 1px solid @color_6;
+    display: inline-block;
+    background: @color_3;
+}
+
+.dd1 {
+    width: 45%;
+    padding: 0 @width-base;
+    display: inline-block;
+    text-align: center;
+}
+
+.dd2 {
+    margin-left: @width-base*2;
+}
+
+.register_icon:hover .submenu2 {
+    display: block;
+}
+
+.searchbox {
+    width: @width-base*85;
+    height: @width-base*5.9;
+    line-height: @width-base*5.9;
+    position: absolute;
+    z-index: @mun*110;
+    top: 0;
+    right: -@width-base*0.5;
+    display: none;
+    input {
+        width: @width-base*40;
+        height: @width-base*4;
+        line-height: @width-base*4;
+        margin-top: @width-base;
+        font-size: @width-base*1.2;
+        vertical-align: top;
+        margin-left: @width-base;
+    }
+    .tagbox {
+        width: @width-base*30;
+        height: @width-base*6.1;
+        text-align: right;
+        display: inline;
+        margin-right: @width-base*5;
+        float: right;
+        a {
+            font-size: @width-base*1.2;
+            color: @color_8;
+            background: @color_1;
+            padding: @width-base*0.3 @width-base*0.5;
+            margin-left: @width-base;
+        }
+    }
+}
+
+.close-icon {
+    width: @width-base*1.5;
+    height: @width-base*1.5;
+    margin-top: @width-base*2.2;
+    cursor: pointer;
+    background: url(./img/close-icon.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    z-index: @mun*12;
+}
+
+.search-icon {
+    background: url(./img/search.png) 0 0 no-repeat;
+    background-size: @width-base*1.7 @width-base*1.7;
+    background-position: 0, 0;
+    height: @width-base*1.7;
+    width: @width-base*1.7;
+    display: inline-block;
+    &:hover {
+        background: url(./img/search2.png) 0 0 no-repeat;
+        background-size: @width-base*1.7 @width-base*1.7;
+        background-position: 0, 0
+    }
+}
+
+
+/*主体部分设置*/
+
+.article {
+    width: @width-base*99;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/*主体部分第一快设置*/
+
+.article_1 {
+    width: @width-base*98.6;
+    height: @width-base*32.4;
+    margin: @width-base*2 2px 0 2px;
+}
+
+
+/*应该左右滚动部分设置*/
+
+.roll {
+    margin-left: -@width-base;
+    height: @width-base*32.4;
+    width: @width-base*74.4;
+    float: left;
+    background-image: url(img/part1.png);
+    background-repeat: no-repeat;
+    background-position: 0 -@width-base*1.6;
+    overflow: hidden;
+}
+
+.hello {
+    height: @width-base*15.4;
+    width: @width-base*23.8;
+    float: right;
+    background-color: @color_3;
+    border: 1px solid @color_9;
+}
+
+.hello-help {
+    height: @width-base*10.8;
+    width: @width-base*18;
+    margin: @width-base*2.3 @width-base*2.9;
+}
+
+.new {
+    height: @width-base*15.6;
+    width: @width-base*24;
+    float: right;
+    margin-top: @width-base;
+    background-image: url(img/part1.png);
+    background-repeat: no-repeat;
+    background-position: -@width-base -@width-base*34.8;
+    overflow: hidden;
+}
+
+.little-man {
+    width: @width-base*5.7;
+    height: @width-base*5.7;
+    float: left;
+}
+
+.sign {
+    width: @width-base*5.7;
+    height: @width-base*5.7;
+}
+
+.welcome {
+    height: @width-base*1.6;
+    width: @width-base*10.8;
+    float: left;
+    font-size: @width-base*1.2;
+    font-weight: bold;
+    color: @color_10;
+    line-height: @width-base*2.5;
+    margin-left: @width-base*1.5;
+}
+
+
+/*登录按钮设置*/
+
+.enter-button {
+    width: @width-base*18;
+    height: @width-base*3.4;
+    float: left;
+    margin-top: @width-base*1.7;
+}
+
+.enter {
+    font-size: @width-base*1.4;
+    text-decoration: none;
+    float: left;
+    display: inline-block;
+    width: @width-base*8.2;
+    height: @width-base*3;
+    border: 1px solid @color_2;
+    border-radius: 2px;
+    color: @color_2;
+    line-height: @width-base*3;
+    text-align: center;
+    &:hover {
+        color: @color_3;
+        background-color: @color_2
+    }
+}
+
+
+/*免费注册按钮设置*/
+
+.free {
+    font-size: @width-base*1.4;
+    text-decoration: none;
+    float: right;
+    display: inline-block;
+    width: @width-base*8.2;
+    height: @width-base*3;
+    border: 1px solid @color_2;
+    border-radius: 2px;
+    color: @color_2;
+    line-height: @width-base*3;
+    text-align: center;
+    &:hover {
+        color: @color_3;
+        background-color: @color_2
+    }
+}
+
+
+/*主体第二部分*/
+
+.article_2 {
+    width: @width-base*98.8;
+    height: @width-base*13;
+    background-color: @color_3;
+    margin-top: @width-base*2.2;
+    margin-left: 2px;
+    a {
+        float: left;
+        width: @width-base*24.6;
+        height: @width-base*3.8;
+        text-decoration: none;
+        border: 1px solid @color_12;
+        border-left: 0;
+        color: @color_10;
+        text-align: center;
+        padding-top: @width-base*9;
+        font-size: @width-base*1.2;
+        font-family:@font;
+        &:hover {
+            color: @color_2
+        }
+    }
+}
+
+.employment_1,
+.employment_2,
+.employment_3,
+.employment_4 {
+    background-size: @width-base*24.6 @width-base*12.8;
+}
+
+.employment_1 {
+    background: url(img/php.jpg) no-repeat;
+}
+
+.employment_2 {
+    background: url(img/web.jpg) no-repeat;
+}
+
+.employment_3 {
+    background: url(img/android.jpg) no-repeat;
+}
+
+.employment_4 {
+    background: url(img/ios.jpg) no-repeat;
+}
+
+
+/*第一个就业班上面边角效果设置*/
+
+.corner {
+    display: inline-block;
+    position: absolute;
+    width: @width-base*5.2;
+    height: @width-base*5.2;
+    margin-top: - @width-base*9;
+    margin-left: - @width-base*17.1;
+    background: url(img/jiuyeban.png) no-repeat center;
+    background-size: @width-base*5.2;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+
+/*主体第三部分*/
+
+.article_3 {
+    width: @width-base*98.8;
+    height: @width-base*27.6;
+    margin-top: @width-base*2.2;
+    ul {
+        width: 100%;
+        height: @width-base*27.2;
+        li img {
+            width: @width-base*23;
+            height: @width-base*15.5;
+        }
+    }
+}
+
+.article_3_1,
+.article_3_2,
+.article_3_3,
+.article_3_4 {
+    height: @width-base*26.8;
+    width: @width-base*23;
+    float: left;
+}
+
+.article_3_2,
+.article_3_3,
+.article_3_4 {
+    margin-left: @width-base*2.2;
+}
+
+.plan {
+    height: @width-base*8.5;
+    width: @width-base*20.4;
+    padding: @width-base*1.4 @width-base*1.3;
+    position: relative;
+    margin-top: -@width-base*0.3;
+    background-color: @color_3;
+}
+
+.plan_title {
+    width: 100%;
+    font-size: @width-base*1.2;
+    color: @color_5+#222;
+    line-height: @width-base*1.8;
+    height: @width-base*3.6;
+    font-family: @font;
+}
+
+.plan_info {
+    color: @color_5+@color_7;
+    font-size: @width-base*1.2;
+    line-height: @width-base*1.6;
+    height: @width-base*1.6;
+    font-family: @font;
+}
+
+.plan_price {
+    float: left;
+    font-size: @width-base*1.8;
+    color: @color_13;
+    vertical-align: bottom;
+    margin-right: @width-base*0.5;
+    font-family:@font;
+}
+
+.plan_price_before {
+    float: left;
+    font-size: @width-base*1.2;
+    color: @color_5+@color_7;
+    margin-top: @width-base*0.6;
+    text-decoration: line-through;
+    vertical-align: bottom;
+    font-family: @font;
+}
+
+.plan_num {
+    display: inline-block;
+    height: @width-base*1.4;
+    position: absolute;
+    margin-top: @width-base*0.4;
+    right: @width-base*1.4;
+    color: @color_5+@color_7;
+    font-size: @width-base*1.2;
+    font-family: @font;
+}
+
+
+/*设置鼠标放上阴影情况*/
+
+.article_3_1:hover,
+.article_3_2:hover,
+.article_3_3:hover,
+.article_3_4:hover {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+}
+
+
+/*职业学院部分设置*/
+
+.school {
+    font-size: @width-base*2;
+    line-height: @width-base*3;
+    margin-top: @width-base*3.4;
+    margin-left: 2px;
+}
+
+.article_4 {
+    width: @width-base*99.2;
+    height: @width-base*27;
+    margin-top: @width-base*2.2;
+    a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.school_web {
+    width: @width-base*49.6;
+    height: @width-base*26.8;
+    float: left;
+    box-sizing: border-box;
+    font-family: @font;
+    img {
+        width: @width-base*49.6;
+        height: @width-base*26.8;
+        float: left;
+        display: inline-block;
+    }
+    span {
+        display: inline-block;
+        position: absolute;
+        float: left;
+        text-align: center;
+        color: @color_3;
+        padding-top: @width-base*18;
+        margin-left: -@width-base*32;
+        font-size: @width-base*2;
+        background: url(img/html5_white.png) no-repeat center 70px;
+        background-size: @width-base*5.5 @width-base*8.4;
+    }
+}
+
+.school_python,
+.school_go,
+.school_ios,
+.school_more {
+    float: left;
+    background: @color_11;
+    width: @width-base*24;
+    height: @width-base*13;
+    margin-left: @width-base*0.8;
+    position: relative;
+    font-family: @font;
+    img {
+        display: inline-block;
+        width: @width-base*24;
+        height: @width-base*13;
+        border: 0 none;
+    }
+    span {
+        display: inline-block;
+        position: absolute;
+        float: left;
+        text-align: center;
+        color: @color_3;
+        padding-top: @width-base*8.8;
+        margin-top: -@width-base*13.8;
+        font-size: @width-base*1.4;
+        background-size: @width-base*3.6 @width-base*3.6;
+    }
+}
+
+.school_python span {
+    margin-left: @width-base*5.8;
+    background: url(img/python_white.png) no-repeat center @width-base*3.1;
+}
+
+.school_go span {
+    margin-left: @width-base*7.4;
+    background: url(img/go_white.png) no-repeat center @width-base*3.1;
+}
+
+.school_ios {
+    margin-top: @width-base*0.8;
+    span {
+        margin-left: @width-base*8.6;
+        background: url(img/ios_white.png) no-repeat center @width-base*3.1;
+    }
+}
+
+.school_more {
+    margin-top: @width-base*0.8;
+    span {
+        margin-left: @width-base*6;
+        background: url(img/more_white.png) no-repeat center @width-base*3.1;
+    }
+}
+
+
+/*会员课程设置*/
+
+.article_5 {
+    width: @width-base*100.2;
+    height: @width-base*31;
+    margin-top: @width-base*2.2;
+    ul li {
+        height: @width-base*15;
+        width: @width-base*15.6;
+        float: left;
+        border: 1px solid @color_9;
+        background-color: @color_3;
+        margin-right: @width-base*0.9;
+        margin-top: @width-base*0.9;
+        font-family:@font;
+        a {
+            display: block;
+            height: 100%;
+            text-align: center;
+            img {
+                display: inline-block;
+                width: @width-base*5.5;
+                height: @width-base*5.5;
+                margin-top: @width-base*2.5;
+            }
+            p {
+                font-size: @width-base*1.2;
+                color: @color_5+#222;
+                height: @width-base*2.2;
+                line-height: @width-base*2.2;
+            }
+            span {
+                display: block;
+                font-size: @width-base*1.2;
+                color: @color_2;
+                height: @width-base*2.2;
+                line-height:@width-base*2.2;
+            }
+        }
+        &:hover {
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+        }
+    }
+}
+
+
+/*全部VIP按钮*/
+
+.allvip {
+    display: inline-block;
+    height: @width-base*3;
+    width: @width-base*12;
+    margin-top: @width-base*3.8;
+    line-height: @width-base*3;
+    border: 1px solid @color_2;
+    border-radius: 2px;
+    font-size: @width-base*1.4;
+    text-decoration: none;
+    color: @color_2;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: -@width-base*6;
+    &:hover {
+        color: @color_3;
+        background-color: @color_2
+    }
+}
+
+
+/*学员故事部分设置*/
+
+.article_6 {
+    height: @width-base*26;
+    width: @width-base*99.8;
+    margin-top: @width-base*2.2;
+    ul li {
+        width: @width-base*31.8;
+        height:@width-base*21;
+        float: left;
+    }
+}
+
+.number_2,
+.number_3 {
+    margin-left: @width-base*2.2;
+}
+
+.story-content {
+    width: 100%;
+    height: @width-base*12.1;
+    border: 1px solid @color_9;
+    background-color: @color_3;
+    position: relative;
+    p {
+        height: @width-base*7.6px;
+        overflow: hidden;
+        font-size: @width-base*1.2;
+        color: @color_5+#222;
+        line-height: @width-base*2;
+        padding: @width-base*2 @width-base*0.4;
+        text-align: left;
+        font-family: @font;
+    }
+}
+
+.red_mark {
+    display: inline-block;
+    width: @width-base*1.4;
+    height:@width-base;
+    float: left;
+    margin-top: @width-base*0.8;
+    margin-left: @width-base*0.9;
+    background: url(img/left_mark.png) no-repeat center;
+    background-size: @width-base*1.4 @width-base;
+}
+
+.right_red_mark {
+    display: inline-block;
+    width: @width-base*1.4;
+    height: @width-base;
+    float: right;
+    margin-top: -@width-base*2;
+    margin-right: @width-base*1.4;
+    background: url(img/left_mark.png) no-repeat center;
+    background-size: @width-base*1.4 @width-base;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+
+.story-body {
+    img {
+        width: @width-base*6;
+        height: @width-base*6;
+        margin-left: @width-base*2;
+        margin-top: @width-base*2;
+        float: left;
+        border-radius: 50%;
+        border: 1px solid @color_9;
+    }
+    p {
+        font-size: @width-base*1.2;
+        color: @color_5+#222;
+        height: @width-base*2.4;
+        line-height: @width-base*2.4;
+        overflow: hidden;
+        text-align: left;
+    }
+    span {
+        display: block;
+        height: @width-base*2.4;
+        line-height: @width-base*2.4;
+        color: @color_5+@color_7;
+        font-size: @width-base*1.2;
+        text-align: left;
+    }
+    div {
+        float: left;
+        margin-top: @width-base*3;
+        margin-left: @width-base;
+    }
+}
+
+
+/*设置鼠标放上边框阴影效果*/
+
+.article_6 .story-content:hover {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
+
+/*回到顶部部分设置*/
+
+.gotop {
+    width: @width-base*3.4;
+    height: @width-base*6.7;
+    position: fixed;
+    left: 50%;
+    margin-left: @width-base*51;
+    bottom: @width-base*5;
+    width: @width-base*3.4;
+    text-align: center;
+    z-index: @mun*20;
+    .top {
+        width: @width-base*3.4;
+        height: @width-base*3.4;
+        position: relative;
+        background: red;
+        i {
+            position: absolute;
+            background: url(./img/gotop.jpg) 0 0 no-repeat;
+            background-size: @width-base*3.4 @width-base*10.3;
+            width: @width-base*3.4;
+            height: @width-base*3.4;
+            right: 0px;
+            &:hover {
+                background: url(./img/gotop2.jpg) 0 0 no-repeat;
+                background-size: @width-base*3.4 @width-base*10.3;
+            }
+        }
+    }
+}
+
+.jkapp {
+    width: @width-base*3.4;
+    height: @width-base*3.4;
+    position: relative;
+    display: block;
+    background: @color_1+#020202 url(./img/phone-1.png) center center no-repeat;
+    background-size: @width-base*1.2 @width-base*2.4;
+    width: @width-base*3.4;
+    height: @width-base*3.5;
+    border-bottom: 1px solid @color_14;
+    &:hover {
+        background: url(./img/phone-2.png) center center no-repeat;
+        background-size: @width-base*1.2 @width-base*2.4
+    }
+}
+
+.appewm {
+    width: @width-base*12.6;
+    height: @width-base*15.9;
+    background: url(./img/appewm.png) center center no-repeat;
+    background-size: 100%;
+    width: @width-base*12.6;
+    height: @width-base*15.9;
+    position: absolute;
+    z-index: @mun*21;
+    left: -@width-base*12.6;
+    top: -@width-base*7;
+    display: none;
+    &:hover .appewm {
+        display: block;
+    }
+}
+
+.jkwx {
+    width: @width-base*3.4;
+    height: @width-base*3.4;
+}
+
+
+/*底部设置*/
+
+.footer {
+    width: 100%;
+    height: @width-base*26.4;
+    background-color: @color_3;
+    margin-top: @width-base*12;
+    border-top: 1px solid @color_9+#010000;
+}
+
+
+/*底部内框设置*/
+
+.footer_1 {
+    width: @width-base*99;
+    height: @width-base*20;
+    margin: @width-base*2.6 auto;
+    border-bottom: 1px solid @color_15;
+}
+
+
+/*底部logo设置*/
+
+.jk_logo {
+    width: @width-base*16;
+    height: @width-base*7.6;
+    float: left;
+    img {
+        width: @width-base*10.9;
+        height: @width-base*4;
+        display: block;
+        vertical-align: middle;
+    }
+    p {
+        font-size: @width-base*1.2;
+        color: @color_5+@color_7;
+        margin-top: @width-base*2;
+    }
+}
+
+.footer_1 dl {
+    width: @width-base*13.5;
+    color: @color_8;
+    float: left;
+    dt {
+        font-size: @width-base*1.4;
+        line-height: @width-base*3;
+    }
+    dd {
+        font-size: @width-base*1.3;
+        line-height: @width-base*3;
+        margin: 0;
+        a {
+            color: @color_8;
+            text-decoration: none;
+            &:hover {
+                color: @color_2
+            }
+        }
+    }
+}
+
+
+/*设置下载区*/
+
+.download {
+    width: @width-base*17.5;
+    margin-left: @width-base*4.6;
+    margin-top: @width-base*0.8;
+    text-align: left;
+    display: inline-block;
+}
+
+.tel {
+    color: @color_8;
+    font-size: @width-base*1.4;
+    margin-bottom: @width-base*2;
+}
+
+
+/*设置右下方apple和android*/
+
+.twoCode {
+    display: inline-block;
+    width: @width-base*11.5;
+    height: @width-base*15.3;
+    position: absolute;
+    top: -@width-base*15.7;
+    left: @width-base*1.2;
+    z-index: 2;
+    display: none;
+}
+
+.down-ios,
+.down-android {
+    position: relative;
+    display: inline-block;
+    width: @width-base*14;
+    height: @width-base*3;
+    border: 1px solid @color_16;
+    margin-bottom: @width-base;
+    line-height: @width-base*3;
+    color: @color_8;
+    font-size: @width-base*1.3;
+    padding-left: @width-base*4;
+    cursor: pointer;
+    background-size: @width-base*3 @width-base*3 !important;
+}
+
+.down-ios {
+    background: url(img/apple.png) no-repeat 0 0;
+}
+
+.down-android {
+    background: url(img/icon-down-android.png) no-repeat 0 0;
+}
+
+
+/*底部版权部分设置*/
+
+.copyright {
+    font-size: @width-base*1.2;
+    color: @color_5+@color_7;
+    margin: 0 auto;
+    width: @width-base*100;
+    text-align: center;
+}
+
+.jkxy {
+    display: inline-block;
+    text-decoration: none;
+    color: @color_5+@color_7;
+    font-weight: normal;
+    &:hover {
+        color: @color_2
+    }
+}
+
+
+/*设置右下角微信和新浪微博*/
+
+.wechat,
+.sina {
+    float: right;
+    height: @width-base*1.5;
+    width: @width-base*2;
+    background-size: @width-base*1.8 @width-base*1.5!important;
+}
+
+.wechat {
+    background: url(img/wechat.png)no-repeat 0 0;
+}
+
+.sina {
+    margin-right: @width-base;
+    background: url(img/sina.png)no-repeat 0 0;
+}
