@@ -1,0 +1,336 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    min-width: 810px;
+    min-height: 600px;
+    height: 100%;
+}
+
+input {
+    outline: none;
+}
+
+header {
+    overflow: hidden;
+}
+
+header nav {
+    float: right;
+    margin: 19px 0 5px 0;
+    padding: 0 146px 0 0;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #333;
+    float: left;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+header nav a:hover {
+    color: #00c;
+}
+
+
+/*设置下拉菜单*/
+
+.setting-menu {
+    z-index: 999;
+    position: absolute;
+    display: inline-block;
+    width: 47px;
+    height: 24px;
+    right: 76px;
+    text-align: center;
+}
+
+.setting-menu a {
+    margin: 0;
+}
+
+.setting-menu:hover .baidu-setting {
+    display: block;
+}
+
+.setting-menu .baidu-setting {
+    position: absolute;
+    top: 25px;
+    left: -16px;
+    width: 60px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    z-index: 99;
+    display: none;
+}
+
+.setting-menu .baidu-setting a {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+}
+
+.setting-menu .baidu-setting a:hover {
+    color: #ffffff;
+    background: #3385ff;
+}
+
+.setting-menu .setting-icon {
+    top: -10px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+.setting-menu .setting-icon:after {
+    content: '.';
+    top: -4px;
+    left: -4px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #ffffff;
+}
+
+
+/*更多产品侧边栏*/
+
+.more-product li {
+    list-style: none;
+    position: relative;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+}
+
+.more-product {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75px;
+    border-left: 1px solid #ddd;
+    background-color: #f9f9f9;
+    z-index: 999;
+    display: none;
+}
+
+.more-product ul {
+    font-size: 14px;
+    padding: 10px 5px 0 5px;
+    text-align: center;
+}
+
+.more-product a {
+    color: #333;
+    text-decoration: none;
+}
+
+.more-product a:hover {
+    text-decoration: underline;
+}
+
+.more-product span {
+    display: block;
+    width: 40px;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.more-product .more-pro {
+    height: 20px;
+    text-decoration: none;
+}
+
+.more-product .more-pro a {
+    text-decoration: none;
+}
+
+.more-product .more-sub-one {
+    background: url(../img/music.png) no-repeat;
+}
+
+.more-product .more-sub-two {
+    background: url(../img/image.png) 2px 0 no-repeat;
+}
+
+.more-product .more-sub-three {
+    background: url(../img/zhidao.png) 2px 0 no-repeat;
+}
+
+.more-product .more-sub-four {
+    background: url(../img/wenku.png) 2px 0 no-repeat;
+}
+
+.more-product .more-sub-five {
+    background: url(../img/bang.png) 2px 0 no-repeat;
+}
+
+.more-product .all-product {
+    text-decoration: underline;
+    border: none;
+    padding-top: 16px;
+}
+
+
+/*更多产品*/
+
+header nav .more {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+header nav .more:hover {
+    color: #ffffff;
+}
+
+.content {
+    position: relative;
+    top: 38.2%;
+    text-align: center;
+}
+
+.content .search-form {
+    position: relative;
+    height: 191px;
+    top: -191px;
+}
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+.content .search-input {
+    width: 539px;
+    height: 28px;
+    border: 1px solid #ddd;
+    padding: 3px 0 3px 7px;
+    border-right-width: 0;
+    vertical-align: middle;
+}
+
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus {
+    border-color: #4791ff transparent #4791ff #4791ff;
+}
+
+.content .search-btn {
+    width: 100px;
+    height: 36px;
+    margin: -4px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.content .search-btn:hover {
+    background-color: #317ef3
+}
+
+.content form {
+    width: 650px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.content .icon-camera {
+    clear: both;
+    position: absolute;
+    right: 108px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: url(../img/camera.png) no-repeat;
+    cursor: pointer;
+}
+
+.content .icon-camera:hover {
+    background-position: 0 -20px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 44px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: #999;
+    margin: 0 5px;
+}
+
+footer p a:hover {
+    color: #999;
+}
+
+footer p span {
+    color: #999;
+}
+
+footer p .icon-copyright {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    top: 2px;
+    overflow: hidden;
+    background: url(../img/icons.png) -600px -95px no-repeat;
+}
+
+footer p .shiele {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    top: 2px;
+    overflow: hidden;
+    background: url(../img/icons.png) -622px -95px no-repeat;
+}

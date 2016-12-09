@@ -1,0 +1,537 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    min-width: 1000px;
+    min-height: 600px;
+    height: 100%;
+}
+
+input {
+    outline: none;
+}
+
+header {
+    overflow: hidden;
+    border-bottom: 1px solid #ebebeb;
+}
+
+header nav {
+    float: right;
+    margin: 18px 0 0 0;
+    padding: 0 210px 0 0;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #333;
+    float: left;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+header nav a:hover {
+    color: #00c;
+}
+
+
+/*天气预报部分设置*/
+
+header .nav-side {
+    float: left;
+    margin: 20px 0 5px 0;
+    padding-left: 16px;
+}
+
+header .nav-side div {
+    display: inline-block;
+}
+
+header .nav-side div a {
+    font-size: 13px;
+    color: #555;
+}
+
+header .nav-side-weather span {
+    position: relative;
+    margin-right: 4px;
+}
+
+header .nav-side-weather .wenther-quality {
+    color: #38f;
+    font-weight: bold;
+}
+
+header .nav-side-weather .weather-icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/a9.png) no-repeat;
+}
+
+header .nav-side-change a {
+    position: relative;
+    margin-right: 15px;
+}
+
+
+/*设置下拉菜单*/
+
+.setting-menu {
+    z-index: 999;
+    position: absolute;
+    display: inline-block;
+    width: 47px;
+    height: 24px;
+    right: 76px;
+    text-align: center;
+}
+
+.setting-menu a {
+    margin: 0;
+}
+
+.setting-menu:hover .baidu-setting {
+    display: block;
+}
+
+.setting-menu .baidu-setting {
+    position: absolute;
+    top: 25px;
+    left: -22px;
+    width: 70px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    z-index: 99;
+    display: none;
+}
+
+.setting-menu .baidu-setting a {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    text-decoration: none;
+}
+
+.setting-menu .baidu-setting a:hover {
+    color: #ffffff;
+    background: #3385ff;
+}
+
+.setting-menu .setting-icon {
+    top: -10px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+.setting-menu .setting-icon:after {
+    content: '.';
+    top: -4px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #ffffff;
+}
+
+.body-menu {
+    z-index: 99;
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+    right: 132px;
+    text-align: center;
+}
+
+.body-menu a {
+    margin: 0;
+}
+
+.body-menu:hover .body-setting {
+    display: block;
+}
+
+.body-menu .body-setting {
+    position: absolute;
+    top: 25px;
+    left: -8px;
+    width: 70px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    z-index: 99;
+    display: none;
+}
+
+.body-menu .body-setting a {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    text-decoration: none;
+}
+
+.body-menu .body-setting a:hover {
+    color: #ffffff;
+    background: #3385ff;
+}
+
+.body-menu .body-icon {
+    top: -10px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+.body-menu .body-icon:after {
+    content: '.';
+    top: -4px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #ffffff;
+}
+
+
+/*更多产品侧边栏*/
+
+.more-product li {
+    list-style: none;
+    position: relative;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+}
+
+.more-product {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75px;
+    border-left: 1px solid #ddd;
+    background-color: #f9f9f9;
+    z-index: 999;
+    display: none;
+}
+
+.more-product ul {
+    font-size: 14px;
+    padding: 6px 5px 0 5px;
+    text-align: center;
+}
+
+.more-product a {
+    color: #333;
+    text-decoration: none;
+}
+
+.more-product a:hover {
+    text-decoration: underline;
+}
+
+.more-product span {
+    display: block;
+    width: 40px;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.more-product .more-pro {
+    height: 20px;
+    text-decoration: none;
+}
+
+.more-product .more-pro a {
+    text-decoration: none;
+}
+
+.more-product .more-sub-one {
+    background: url(../img/music.png) no-repeat;
+}
+
+.more-product .more-sub-two {
+    background: url(../img/image.png) 2px 0 no-repeat;
+}
+
+.more-product .more-sub-three {
+    background: url(../img/zhidao.png) 2px 0 no-repeat;
+}
+
+.more-product .more-sub-four {
+    background: url(../img/wenku.png) 2px 0 no-repeat;
+}
+
+.more-product .more-sub-five {
+    background: url(../img/bang.png) 2px 0 no-repeat;
+}
+
+.more-product .all-product {
+    text-decoration: underline;
+    border: none;
+    padding-top: 16px;
+}
+
+
+/*更多产品*/
+
+header nav .more {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+header nav .more:hover {
+    color: #ffffff;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+}
+
+.content .search-form {
+    position: relative;
+    height: 191px;
+}
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+.content .search-input {
+    width: 539px;
+    height: 28px;
+    border: 1px solid #ddd;
+    padding: 3px 0 3px 7px;
+    border-right-width: 0;
+    vertical-align: middle;
+}
+
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus {
+    border-color: #4791ff transparent #4791ff #4791ff;
+}
+
+.content .search-btn {
+    width: 100px;
+    height: 36px;
+    margin: -4px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.content .search-btn:hover {
+    background-color: #317ef3
+}
+
+.content form {
+    width: 650px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.content .icon-camera {
+    clear: both;
+    position: absolute;
+    right: 108px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 18px;
+    background: url(../img/camera.png) no-repeat;
+    cursor: pointer;
+}
+
+.content .icon-camera:hover {
+    background-position: 0 -20px;
+}
+
+
+/*功能区域*/
+
+.content .main {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+
+.content .main-content {
+    margin: 50px auto;
+    height: 100%;
+    width: 895px;
+    border: 1px solid #e9e9e9;
+}
+
+.content .main-content-nav {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.content .main-content-nav div {
+    float: left;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.content .main-notice {
+    
+    height: 100%;
+}
+
+.content .main-notice:hover {
+    background-color: #b3b6bb;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.content .main-notice-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 12px;
+    left: 12px;
+    background: url(../img/card_set.png) -15px 0 no-repeat;
+}
+
+.content .main-recommend,
+.main-gps,
+.main-video,
+.main-buy {
+    width: 124px;
+    height: 100%;
+}
+
+.content .main-recommend:hover,
+.main-gps:hover,
+.main-video:hover,
+.main-buy:hover {
+    background-color: #b3b6bb;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.content .main-setting{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right:16px;
+    top: 10px;
+    background:url(../img/card_set.png) -121px -49px no-repeat;
+}
+.content .main-setting:hover{
+    background:url(../img/card_set.png) -121px -73px no-repeat;
+    cursor: pointer;
+}
+.content .tabin-first{
+    clear: both;
+    border:1px solid #e9e9e9;
+    width: 895px;
+    height: 300px;
+    
+    display: none;
+}
+.content .tabin{
+    display: block;
+
+}
+.content .main-notice{
+    background-color: #9A9DA2;
+    color: #ffffff;
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: -250px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: #999;
+    margin: 0 2px;
+}
+
+footer p a:hover {
+    color: #999;
+}
+
+footer p span {
+    color: #999;
+}
+
+footer p .icon-copyright {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    top: 2px;
+    overflow: hidden;
+    background: url(../img/icons.png) -600px -95px no-repeat;
+}
+
+footer p .shiele {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    top: 2px;
+    overflow: hidden;
+    background: url(../img/icons.png) -622px -95px no-repeat;
+}
