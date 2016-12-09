@@ -1,0 +1,146 @@
+body {
+    font: 12px arial;
+}
+
+header {
+    overflow: hidden;
+}
+
+header nav {
+    width: 530px;
+    float: right;
+    margin-right: 1px;
+    line-height: 24px;
+}
+
+header nav a {
+    color: #515151;
+    margin-left: 15px;
+}
+
+
+/*鼠标放上显示下拉菜单——————开始*/
+
+.menuitem .submenu {
+    display: none;
+}
+
+.menuitem:hover .submenu {
+    display: block;
+}
+
+
+/*鼠标放上显示下拉菜单——————结束*/
+
+.menu {
+    width: 400px;
+    float: left;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#menu1 {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    margin-left: 19px;
+    margin-right: 100px;
+}
+
+#menu2 {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 10px;
+}
+
+
+/*主体部分*/
+
+.content {
+    text-align: center;
+}
+
+.content input {
+    width: 500px;
+    height: 34px;
+    float: left;
+}
+
+.content button {
+    width: 100px;
+    height: 40px;
+    float: left;
+    border: 0;
+}
+
+.button {
+    color: white;
+    background: #38f;
+    border-bottom: solid #38f;
+    font-size: 15px;
+}
+
+body form {
+    width: 606px;
+    margin: auto;
+}
+
+.camera {
+   width: 20px;
+    height: 18px;
+     background-image:url(img/camera.png);
+      display: inline-block; 
+      position: absolute; 
+      right: 490px; top: 215px; 
+
+}
+
+
+/*底部信息*/
+
+footer p {
+    text-align: center;
+    color: #515151;
+}
+
+footer {
+    padding-top: 250px;
+    width: 700px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a {
+    color: #515151;
+}
+
+.code {
+    display: inline-block;
+    float: left;
+}
+
+.footer {
+    display: inline-block;
+    float: left;
+    margin-left: 50px;
+}
