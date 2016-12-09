@@ -1,0 +1,109 @@
+.body {
+    background-color: #0D7792;
+}
+
+.d1 {
+    width: 710px;
+    height: auto;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+   
+}
+
+.header {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div1 {
+    padding-top: 5px;
+}
+
+.div2 {
+    width: 150px;
+    float: right;
+    font-size: 12px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.table {
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+td {
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.td1 {
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.td2 {
+    background-color: #EEEEEE;
+    font-size: 13px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.td21 {
+    background-color: #EEEEEE;
+    font-size: 13px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.td34 {
+    background-color: #EEEEEE;
+    font-size: 13px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.p1 {
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.f1 {
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.td3 {
+    width: 20%;
+    text-align: right;
+}
+
+.td57 {
+    width: auto;
+    height: 100px;
+    text-align: center;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.textarea{
+    resize:none;
+}
