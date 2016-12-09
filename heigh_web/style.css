@@ -1,0 +1,13 @@
+
+
+.container{
+	margin:0 100px;
+
+}
+h2{
+	cursor: pointer;
+	color: green;
+}
+h1{
+	color: red;
+}
