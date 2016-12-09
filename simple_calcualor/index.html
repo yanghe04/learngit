@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>网页计算器</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+    <!--窗口-->
+    <div id="view">
+        
+        <!--计算器-->
+        <div id="calculator">
+            <!--显示屏-->
+            <div id="screen">
+                <p id="expression" class="print"></p>
+                <p id="answer" class="print"></p>
+            </div>
+            <!--end显示屏-->
+            <!--按钮-->
+            <div id="button">
+                <!--第一行--><!--double为双目运算符，one为单目运算符-->
+                <ul class="row">
+                    <li class="col">
+                        <input type="button" name="clear" class="btn bt_clear" value="C">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="one" class="btn" value="sin">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="one" class="btn" value="cos">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="one" class="btn" value="√">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="one" class="btn" value="1/">
+                    </li>
+                </ul>
+                <!--第二行-->
+                <ul class="row">
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number" value="7">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number" value="8">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number" value="9">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="double" class="btn " value="*">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="double" class="btn" value="%">
+                    </li>
+                </ul>
+                <!--第三行-->
+                <ul class="row">
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number" value="4">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number" value="5">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number" value="6">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="double" class="btn" value="+">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="double" class="btn" value="÷">
+                    </li>
+                </ul>
+                <!--第四行-->
+                <ul class="row">
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number" value="1">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number" value="2">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number" value="3">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="double" class="btn" value="-">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="double" class="btn" value="^">
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li class="col">
+                        <input type="button" name="number" class="btn bt_number bt_double" value="0">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="point" class="btn bt_number" value=".">
+                    </li>
+                    <li class="col">
+                        <input type="button" name="is" class="btn bt_double" value="=">
+                    </li>
+                </ul>
+            </div>
+            <!--end按钮-->
+        </div>
+        <!--end计算器-->
+    </div>
+    <!--end窗口-->
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>
