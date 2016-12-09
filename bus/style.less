@@ -1,0 +1,216 @@
+/*基础变量*/
+
+@width-base: 10px;
+@color1: #E5E5E5;
+@color2: #FF0000;
+
+
+
+@color3: #FFFF00;
+@color4: #0000FF;
+@color5: #999eee;
+@color6: #000000;
+@color7: #17C721;
+@color8: #FFFFFF;
+@font:Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+
+/*初始化样式*/
+
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+span {
+    font-weight: bolder;
+}
+
+
+/*container设置*/
+
+.container {
+    width: @width-base*120;
+    height: @width-base*80;
+    background-color: @color1;
+    margin: @width-base;
+    .top {
+        width: 100%;
+        height: @width-base*25;
+        background-color: @color7;
+        .num {
+            width: @width-base*40;
+            height: @width-base*25;
+            background-color: @color7;
+            float: left;
+            position: relative;
+            span {
+                position: absolute;
+                font-size: @width-base*19;
+                line-height: @width-base*19;
+                color: @color8;
+                left: @width-base;
+                top:  @width-base*2;
+                font-family: @font;
+            }
+        }
+        .information {
+            width: @width-base*78;
+            height: @width-base*25;
+            background-color: @color7;
+            float: right;
+            .next-station {
+                width: 100%;
+                height: 67%;
+                span {
+                    position: relative;
+                    top: @width-base*4;
+                    left: @width-base;
+                    font-size: @width-base*7;
+                    font-family: @font;
+                }
+            }
+            .price {
+                width: 100%;
+                height: 33%;
+                span {
+                    position: relative;
+                    font-size: @width-base*2;
+                    left: @width-base*2;
+                    font-family: @font;
+                }
+            }
+        }
+    }
+    .bottom {
+        width: 100%;
+        height: @width-base*55;
+        .direction {
+            height: @width-base*18;
+            width: 100%;
+            .arrows {
+                width: 96%;
+                height: @width-base*4;
+                position: relative;
+                top: @width-base*9;
+                left: 2%;
+                .triangle {
+                    width: 0px;
+                    height: 0px;
+                    border: @width-base*6 solid @color2;
+                    border-top-color: transparent;
+                    border-left-color: transparent;
+                    transform: rotateX(75deg);
+                    -webkit-transform -moz-transform: rotateX(75deg);
+                    -o-transform: rotateX(75deg);
+                    -ms-transform: rotateX(75deg);
+                    position: absolute;
+                    top: -@width-base*4;
+                }
+                .line {
+                    height: 0;
+                    width: 89%;
+                    border: 6px solid @color2;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 4px;
+                }
+            }
+            .time {
+                width: 50%;
+                height: @width-base*2;
+                position: relative;
+                top: @width-base*4.5;
+                left: @width-base*60;
+                span {
+                    font-size: @width-base*2.2;
+                    font-family: @font;
+                }
+            }
+            .yellow-point {
+                width: 0;
+                height: 0;
+                border: 6px solid @color3;
+                border-radius: 50%;
+                position: relative;
+                left: @width-base*107;
+                top: @width-base*5.4;
+            }
+        }
+        .content {
+            height: @width-base*37;
+            width: 100%;
+            .last-station {
+                width: 2%;
+                height: 80%;
+                float: left;
+                margin-left: @width-base*4;
+                span {
+                    position: relative;
+                    font-size: @width-base*2.4;
+                    color: @color4;
+                    font-family: @font;
+                }
+            }
+            .middle-station {
+                float: left;
+                margin-left: @width-base*2;
+                width: 80%;
+                height: 80%;
+                ul li {
+                    float: left;
+                    width: @width-base*2;
+                    font-size: @width-base*2;
+                    padding: 0 @width-base*2;
+                    font-weight: 700;
+                    font-family: @font;
+                }
+            }
+            .this-station {
+                width: 2%;
+                height: 80%;
+                float: left;
+                margin-left: @width-base*2;
+                span {
+                    position: relative;
+                    font-size: @width-base*2.4;
+                    color: @color2;
+                    font-family: @font;
+                }
+            }
+            .past-station {
+                width: 2%;
+                height: 80%;
+                float: left;
+                margin-left: @width-base*3.5;
+                span {
+                    position: relative;
+                    font-size: @width-base*2.4;
+                    color: @color5;
+                    font-family: @font;
+                }
+            }
+        }
+    }
+}

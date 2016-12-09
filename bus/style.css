@@ -1,0 +1,195 @@
+/*基础变量*/
+/*初始化样式*/
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+span {
+  font-weight: bolder;
+}
+/*container设置*/
+.container {
+  width: 1200px;
+  height: 800px;
+  background-color: #E5E5E5;
+  margin: 10px;
+}
+.container .top {
+  width: 100%;
+  height: 250px;
+  background-color: #17C721;
+}
+.container .top .num {
+  width: 400px;
+  height: 250px;
+  background-color: #17C721;
+  float: left;
+  position: relative;
+}
+.container .top .num span {
+  position: absolute;
+  font-size: 190px;
+  line-height: 190px;
+  color: #FFFFFF;
+  left: 10px;
+  top: 20px;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+.container .top .information {
+  width: 780px;
+  height: 250px;
+  background-color: #17C721;
+  float: right;
+}
+.container .top .information .next-station {
+  width: 100%;
+  height: 67%;
+}
+.container .top .information .next-station span {
+  position: relative;
+  top: 40px;
+  left: 10px;
+  font-size: 70px;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+.container .top .information .price {
+  width: 100%;
+  height: 33%;
+}
+.container .top .information .price span {
+  position: relative;
+  font-size: 20px;
+  left: 20px;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+.container .bottom {
+  width: 100%;
+  height: 550px;
+}
+.container .bottom .direction {
+  height: 180px;
+  width: 100%;
+}
+.container .bottom .direction .arrows {
+  width: 96%;
+  height: 40px;
+  position: relative;
+  top: 90px;
+  left: 2%;
+}
+.container .bottom .direction .arrows .triangle {
+  width: 0px;
+  height: 0px;
+  border: 60px solid #FF0000;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotateX(75deg);
+  -webkit-transform-moz-transform: rotateX(75deg);
+  -o-transform: rotateX(75deg);
+  -ms-transform: rotateX(75deg);
+  position: absolute;
+  top: -40px;
+}
+.container .bottom .direction .arrows .line {
+  height: 0;
+  width: 89%;
+  border: 6px solid #FF0000;
+  position: absolute;
+  right: 0px;
+  bottom: 4px;
+}
+.container .bottom .direction .time {
+  width: 50%;
+  height: 20px;
+  position: relative;
+  top: 45px;
+  left: 600px;
+}
+.container .bottom .direction .time span {
+  font-size: 22px;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+.container .bottom .direction .yellow-point {
+  width: 0;
+  height: 0;
+  border: 6px solid #FFFF00;
+  border-radius: 50%;
+  position: relative;
+  left: 1070px;
+  top: 54px;
+}
+.container .bottom .content {
+  height: 370px;
+  width: 100%;
+}
+.container .bottom .content .last-station {
+  width: 2%;
+  height: 80%;
+  float: left;
+  margin-left: 40px;
+}
+.container .bottom .content .last-station span {
+  position: relative;
+  font-size: 24px;
+  color: #0000FF;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+.container .bottom .content .middle-station {
+  float: left;
+  margin-left: 20px;
+  width: 80%;
+  height: 80%;
+}
+.container .bottom .content .middle-station ul li {
+  float: left;
+  width: 20px;
+  font-size: 20px;
+  padding: 0 20px;
+  font-weight: 700;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+.container .bottom .content .this-station {
+  width: 2%;
+  height: 80%;
+  float: left;
+  margin-left: 20px;
+}
+.container .bottom .content .this-station span {
+  position: relative;
+  font-size: 24px;
+  color: #FF0000;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+.container .bottom .content .past-station {
+  width: 2%;
+  height: 80%;
+  float: left;
+  margin-left: 35px;
+}
+.container .bottom .content .past-station span {
+  position: relative;
+  font-size: 24px;
+  color: #999eee;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
