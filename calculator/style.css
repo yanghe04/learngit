@@ -1,0 +1,44 @@
+.sign{
+	width: 70px;
+        height: 40px;
+        text-align: center;
+}
+.txtScream{
+	width:360px; 
+    line-height: 58px;
+    background: #DFF2DA;
+	border-style:none; 
+	text-align:right;
+	margin:2px 2px;
+}
+.btnCE{
+	width:160px;
+	height: 40px;
+	
+	 text-align:center;
+	     font-size: 30px;
+}
+.btnBS{
+	width:160px;
+	height: 40px;
+	 
+	 text-align:center;
+	     font-size: 30px;
+}
+table{
+	margin:100px auto;
+
+}
+table td {
+    text-align: center;
+    vertical-align: middle;
+    border:1px solid #D1BE20;
+	height: 60px;
+}
+input{
+	text-align: center;
+    line-height: 40px;
+    font-size: 32px;
+    background-color: #5BB246;
+
+}

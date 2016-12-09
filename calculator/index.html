@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>简单计算器</title>
+    <!--引入外部样式表-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+    <table id="tbCalculator">
+        <tr>
+            <!--输入显示框-->
+            <td colspan="4">
+                <input type="text" name="txtScream" class="txtScream" id="txtScream" readonly="readonly" /> </td>
+        </tr>
+        <tr>
+            <!--清零键-->
+            <td colspan="2">
+                <input type="button" name="btnCE" class="btnCE" id="btnCE" value="C E" onclick="clearAll();" />
+            </td>
+            <!--退格键-->
+            <td colspan="2">
+                <input type="button" name="btnBS" class="btnBS" id="btnBS" value="Backspace" onclick="backspace();" />
+            </td>
+        </tr>
+        <tr>
+            <!--下面是7，8，9，/键-->
+            <td>
+                <input type="button" name="btn7" class="sign" id="btn7" value="7" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn8" class="sign" id="btn8" value="8" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn9" class="sign" id="btn9" value="9" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn10" class="sign" id="btn10" value="/" onclick="calculation(this);" />
+            </td>
+        </tr>
+        <tr>
+            <!--下面是4，5，6，*键-->
+            <td>
+                <input type="button" name="btn4" class="sign" id="btn4" value="4" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn5" class="sign" id="btn5" value="5" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn6" class="sign" id="btn6" value="6" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn11" class="sign" id="btn11" value="*" onclick="calculation(this);" />
+            </td>
+        </tr>
+        <tr>
+            <!--下面是1，2，3，-键-->
+            <td>
+                <input type="button" name="btn1" class="sign" id="btn1" value="1" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn2" class="sign" id="btn2" value="2" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn3" class="sign" id="btn3" value="3" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn12" class="sign" id="btn12" value="-" onclick="calculation(this);" />
+            </td>
+        </tr>
+        <tr>
+            <!--下面是0，.，=，+键-->
+            <td>
+                <input type="button" name="btn0" class="sign" id="btn0" value="0" onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btndot" class="sign" id="btndot" value="." onclick="connectionDigital(this);" />
+            </td>
+            <td>
+                <input type="button" name="btn13" class="sign" id="btn13" value="=" onclick="getResult();" />
+            </td>
+            <td>
+                <input type="button" name="btn14" class="sign" id="btn14" value="+" onclick="calculation(this);" />
+            </td>
+        </tr>
+    </table>
+    
+    <!--引入外部js脚本-->
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>
