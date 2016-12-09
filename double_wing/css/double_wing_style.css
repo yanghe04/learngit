@@ -1,0 +1,108 @@
+/*整个页面从上到下分为下面三个部分*/
+
+.header {
+    background-color: #F7E9E9;
+    height: 100px;
+    margin: 10px;
+}
+
+.atricle {
+    
+    overflow: hidden;
+}
+
+.footer {
+    background-color: #F7E9E9;
+    height: 100px;
+    margin: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*给整个页面设置最小宽度*/
+
+body {
+    min-width: 600px;
+}
+
+
+/*middle部分的左侧设置*/
+
+.left {
+    float: left;
+    width: 200px;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.left_in {
+    width: 190px;
+    margin-left: 10px;
+    margin-top: -20px;
+    background-color: #F8E7D5;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*middle部分的设置*/
+
+.middle {
+    float: left;
+    width: 100%;
+}
+
+.inner {
+    margin-left: 210px;
+    margin-right: 210px;
+    background-color: #F8E7D5;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*middle部分的右侧设置*/
+
+.right {
+    float: left;
+    width: 200px;
+    margin-left: -200px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.right_in {
+    width: 190px;
+    margin-right: 10px;
+    margin-top: -20px;
+    background-color: #F8E7D5;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*页面内容字体设置*/
+
+p {
+    margin-top: 0;
+    color: #BE5C28;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #EC9A6C;
+}
+
+h3 {
+    text-align: center;
+}
+
+li {
+    line-height: 32px;
+    color: #BE5C28;
+}
