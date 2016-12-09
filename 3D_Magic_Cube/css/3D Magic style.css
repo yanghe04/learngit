@@ -1,0 +1,226 @@
+.container {
+    width: 300px;
+    height: 300px;
+    margin: 100px auto 0 auto;
+}
+
+.box div {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    -webkit-animation-name: animation;
+    -moz-animation-name: animation;
+    -o-animation-name: animation;
+    -ms-animation-name: animation;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    margin: 150;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -webkit-perspective-origin: 150px 150px 0;
+    -moz-perspective-origin: 150px 150px 0;
+    -o-perspective-origin: 150px 150px 0;
+    -ms-perspective-origin: 150px 150px 0;
+}
+/*动画效果设置*/
+animation {
+    from {
+        -ms-transform: rotateX(0deg)rotateY(0deg)rotateZ(0deg);
+    }
+    to {
+        -ms-transform: rotateX(360deg)rotateY(360deg)rotateZ(360deg);
+    }
+}
+@-webkit-keyframes animation {
+    from {
+        -webkit-transform: rotateX(0deg)rotateY(0deg)rotateZ(0deg);
+    }
+    to {
+        -webkit-transform: rotateX(360deg)rotateY(360deg)rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes animation {
+    from {
+        -moz-transform: rotateX(0deg)rotateY(0deg)rotateZ(0deg);
+    }
+    to {
+        -moz-transform: rotateX(360deg)rotateY(360deg)rotateZ(360deg);
+    }
+}
+
+@-o-keyframes animation {
+    from {
+        -o-transform: rotateX(0deg)rotateY(0deg)rotateZ(0deg);
+    }
+    to {
+        -o-transform: rotateX(360deg)rotateY(360deg)rotateZ(360deg);
+    }
+}
+
+
+
+
+/*6个面的位置设置*/
+
+.front {
+    transform: translateZ(150px);
+    -webkit-transform: translateZ(150px);
+    -moz-transform: translateZ(150px);
+    -o-transform: translateZ(150px);
+    -ms-transform: translateZ(150px);
+}
+
+.back {
+    transform: translateZ(-150px);
+    -webkit-transform: translateZ(-150px);
+    -moz-transform: translateZ(-150px);
+    -o-transform: translateZ(-150px);
+    -ms-transform: translateZ(-150px);
+}
+
+.top {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+    -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+    -o-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+}
+
+.botton {
+    transform: rotateX(-90deg) translateZ(150px);
+    -webkit-transform: rotateX(-90deg) translateZ(150px);
+    -moz-transform: rotateX(-90deg) translateZ(150px);
+    -o-transform: rotateX(-90deg) translateZ(150px);
+    -ms-transform: rotateX(-90deg) translateZ(150px);
+}
+
+.left {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+    -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+    -o-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(150px);
+    -webkit-transform: rotateY(90deg) translateZ(150px);
+    -moz-transform: rotateY(90deg) translateZ(150px);
+    -o-transform: rotateY(90deg) translateZ(150px);
+    -ms-transform: rotateY(90deg) translateZ(150px);
+}
+
+
+
+
+/*6个面的大小颜色设置*/
+
+.front div {
+    width: 98px;
+    height: 98px;
+    background-color: #1E8228;
+    border-radius: 10px;
+}
+
+.back div {
+    width: 98px;
+    height: 98px;
+    background-color: #FF0000;
+    border-radius: 10px;
+}
+
+.top div {
+    width: 98px;
+    height: 98px;
+    background-color: #F6F40C;
+    border-radius: 10px;
+}
+
+.botton div {
+    width: 98px;
+    height: 98px;
+    background-color: #1A0CF6;
+    border-radius: 10px;
+}
+
+.left div {
+    width: 98px;
+    height: 98px;
+    background-color: #8E0F8F;
+    border-radius: 10px;
+}
+
+.right div {
+    width: 98px;
+    height: 98px;
+    background-color: #8F0F5C;
+    border-radius: 10px;
+}
+
+
+/*以下为每一面的9个小彩色方块*/
+
+.one {
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.two {
+    margin-left: 101px;
+    margin-top: 1px;
+}
+
+.three {
+    margin-left: 201px;
+    margin-top: 1px;
+}
+
+.four {
+    margin-left: 1px;
+    margin-top: 101px;
+}
+
+.five {
+    margin-left: 101px;
+    margin-top: 101px;
+}
+
+.six {
+    margin-left: 201px;
+    margin-top: 101px;
+}
+
+.seven {
+    margin-left: 1px;
+    margin-top: 201px;
+}
+
+.eight {
+    margin-left: 101px;
+    margin-top: 201px;
+}
+
+.nine {
+    margin-left: 201px;
+    margin-top: 201px;
+}
