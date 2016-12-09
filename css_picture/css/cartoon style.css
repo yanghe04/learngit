@@ -1,0 +1,284 @@
+  .feeler_1 {
+      width: 24px;
+      height: 20px;
+      background-color: #000000;
+      border-radius: 50%;
+      position: absolute;
+  }
+  
+  .feeler_2 {
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+      border: 10px solid;
+      border-radius: 70% 50%;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      position: absolute;
+      transform: rotate(-45deg);
+      margin-left: -44px;
+      margin-top: 10px;
+  }
+  
+  .feeler_left {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+  }
+  
+  .feeler_right {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      transform: rotateY(180deg);
+      margin-left: 50px;
+  }
+  
+  .feeler {
+      margin-left: 30px;
+  }
+  
+  .face {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 10px solid;
+      margin-left: 20px;
+      margin-top: 63px;
+  }
+  
+  .eyes_left {
+      margin: 0;
+      padding: 0;
+      width: 12px;
+      height: 18px;
+      background-color: #000000;
+      border-radius: 50% 50%;
+      position: absolute;
+  }
+  
+  .eyes_right {
+      margin: 0;
+      padding: 0;
+      width: 12px;
+      height: 18px;
+      background-color: #000000;
+      border-radius: 50% 50%;
+      position: absolute;
+      margin-left: 40px;
+  }
+  
+  .eyes {
+      width: 50px;
+      height: 15px;
+      position: absolute;
+      margin-left: 80px;
+      margin-top: -107px;
+  }
+  
+  .mouth {
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 10px solid;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      position: absolute;
+      transform: rotateZ(45deg);
+      margin-left: 45px;
+      margin-top: -145px;
+  }
+  
+  .header {
+      height: 300px;
+      width: 200px;
+      background-color: transparent;
+      position: absolute;
+      margin-left: 310px;
+      margin-top: 282px;
+  }
+  
+  .bodyer {
+      width: 500px;
+      height: 300px;
+      position: absolute;
+      margin-left: 300px;
+      margin-top: 320px;
+  }
+  
+  .part1 {
+      height: 200px;
+      width: 300px;
+      border: 10px solid;
+      border-radius: 120px 120px;
+      position: absolute;
+      margin-left: 155px;
+      border-left-color: transparent;
+  }
+  
+  .part2 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 10px solid;
+      position: absolute;
+      background-color: transparent;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+  }
+  
+  .figure1 {
+      width: 196px;
+      height: 258px;
+      border: 10px solid;
+      border-radius: 50%;
+      position: absolute;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      margin-left: -114px;
+      margin-top: -39px;
+  }
+  
+  .figure2 {
+      width: 200px;
+      height: 270px;
+      border: 10px solid;
+      border-radius: 50%;
+      position: absolute;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      margin-left: -78px;
+      margin-top: -46px;
+  }
+  
+  .figure3 {
+      width: 200px;
+      height: 270px;
+      border: 10px solid;
+      border-radius: 50%;
+      position: absolute;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      margin-left: 38px;
+      margin-top: -45px;
+  }
+  
+  .figure4 {
+      width: 200px;
+      height: 270px;
+      border: 10px solid;
+      border-radius: 50%;
+      position: absolute;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      margin-left: -2px;
+      margin-top: -45px;
+  }
+  
+  .needle_1 {
+      width: 0px;
+      height: 0px;
+      border: 50px solid;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      transform: rotateX(70deg);
+  }
+  
+  .needle {
+      width: 100px;
+      height: 100px;
+      margin-left: 772px;
+      margin-top: 380px;
+      position: absolute;
+  }
+  
+  .wing_right {
+      height: 210px;
+      width: 310px;
+      border: 10px solid;
+      position: absolute;
+      margin-left: 200px;
+      margin-top: 58px;
+      border-top-left-radius: 250px 100px;
+      border-top-right-radius: 136px 120px;
+      border-bottom-left-radius: 250px 100px;
+      border-bottom-right-radius: 136px 120px;
+      transform: rotateZ(-68deg);
+      animation:shake_right 0.5s infinite ease-in-out;
+  }
+  
+  .wing_right_help {
+      width: 139px;
+      height: 100px;
+      border: 10px solid;
+      position: absolute;
+      margin-left: 256px;
+      margin-top: 298px;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      background-color: transparent;
+  }
+  
+  .wing_left {
+      height: 210px;
+      width: 310px;
+      border: 10px solid;
+      position: absolute;
+      margin-left: 34px;
+      margin-top: 70px;
+      border-top-left-radius: 250px 100px;
+      border-top-right-radius: 136px 120px;
+      border-bottom-left-radius: 250px 100px;
+      border-bottom-right-radius: 136px 120px;
+      transform: rotateZ(-100deg);
+      animation:shake_left 0.5s infinite ease-in-out;
+  }
+  
+  .left {
+      transform: rotate(-20deg);
+  }
+  
+  .cut1 {
+      width: 500px;
+      height: 308px;
+      position: absolute;
+     
+      overflow: hidden;
+  }
+  
+  .cut2 {
+      width: 414px;
+      height: 274px;
+      position: absolute;
+    
+      overflow: hidden;
+  }
+  
+  .wing {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      margin-left: 312px;
+      margin-top: 60px;
+  }
+  
+  @keyframes shake_left{
+    0%{margin-top:70px; }
+    50%{margin-top:75px; }
+    100%{margin-top:70px ;}
+  }
+
+  @keyframes shake_right{
+    0%{margin-top:58px; }
+    50%{margin-top:68px; }
+    100%{margin-top:58px ;}
+  }
