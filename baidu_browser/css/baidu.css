@@ -1,0 +1,244 @@
+body {
+    font: 12px arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*设置页面最小宽度*/
+
+body {
+    min-width: 900px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/*设置导航标签的字体颜色和字体形态*/
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+
+/*设置登录和设置菜单的字体形态*/
+
+.register,
+.set {
+    font-weight: normal;
+}
+
+
+/*设置更多选项菜单的字体形态*/
+
+.more {
+    text-decoration: none;
+    font-weight: normal;
+    background-color: #3388FF;
+    color: #FFFFFF;
+}
+
+
+/*设置菜单列表的长，宽，高，浮动等状态*/
+
+.nav {
+    border-right: none;
+    overflow: hidden;
+    float: right;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+.nav ul li {
+    float: left;
+}
+
+
+/*设置单个菜单状态*/
+
+.nav ul li a {
+    width: 60px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+}
+
+
+/*设置二级下拉菜单形态*/
+
+.two {
+    width: 80px;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+/*设置菜单鼠标点上变色状态*/
+
+.nav ul li a:hover {
+    color: blue;
+}
+
+
+/*设置更多选项鼠标点上变色状态*/
+
+.more:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.nav ul li ul {
+    position: absolute;
+    display: none;
+}
+
+.nav ul li ul li {
+    float: none;
+}
+
+.nav ul li ul li a {
+    border-right: none;
+    border-top: 1px dotted #ccc;
+    // background: #f5f5f5;
+}
+
+.nav ul li:hover ul {
+    display: block;
+}
+
+
+/*主体部分*/
+
+
+/*设置主体居中*/
+
+.content {
+    text-align: center;
+}
+
+
+/*设置输入框形态*/
+
+.content input {
+    width: 500px;
+    height: 36px;
+    float: left;
+}
+
+
+/*设置百度一下搜索按钮形态*/
+
+.content button {
+    width: 100px;
+    height: 38px;
+    float: left;
+    border: 0;
+}
+
+.button {
+    color: white;
+    background: #38f;
+    border-bottom: solid #38f;
+    font-size: 15px;
+}
+
+body form {
+    width: 606px;
+    margin: auto;
+}
+
+
+/*设置照相机图标状态*/
+
+.camera {
+    position: absolute;
+    margin-left: -28px;
+    margin-top: 10px;
+    /*仅针对IE6的照相机Hack位置的调整*/
+    /*此方法应该对IE7和6都有用，可是实际操做时候IE7不能实现*/
+    +margin-left: -128;
+}
+
+
+/*针对Chrome浏览器Hack所做调整*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .content input {
+        height: 34px
+    }
+}
+
+{}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .camera {
+        margin-left: -78px
+    }
+}
+
+{}
+
+
+/*针对firefox的Hack所做的调整*/
+
+@-moz-document url-prefix() {
+    .camera {
+        margin-left: -130px;
+    }
+}
+
+
+/*针对IE7的照相机位置Hack所做的调整---此方法不能实现*/
+
+
+/**+html.camera{margin-left:-128;}*/
+
+
+/*底部信息*/
+
+footer p {
+    text-align: center;
+    color: #515151;
+}
+
+footer {
+    padding-top: 250px;
+    width: 700px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a {
+    color: #515151;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.code {
+    display: inline-block;
+    float: left;
+    /*底部二维码的IE8.7.6的Hack位置调整样式*/
+    margin-left: 350px\9;
+    margin-top: 200px\9;
+}
+
+.footer {
+    display: inline-block;
+    float: left;
+    margin-left: 50px;
+    /*底部版权的IE8.7.6的Hack位置调整样式*/
+    margin-left: 650px\9;
+    margin-top: -60px\9;
+}
