@@ -1,0 +1,21 @@
+/*设置中间左侧导航外边框，背景，边角等情况*/
+.side {
+    width: 250px;
+    height: 500px;
+    background-color: #222222;
+    border-radius: 5px;
+    float: left;
+}
+
+.side div {
+    margin-left: 40px;
+}
+/*脚部版权等信息*/
+footer {
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+    color: #9D9989;
+    background-color: #222222;
+}
