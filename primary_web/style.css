@@ -1,0 +1,16 @@
+body{
+	margin: 50px 100px;
+}
+h2{
+	color: #62BD2D;
+}
+h3{
+	color: #DB5F39;
+}
+ul li{
+	line-height: 24px;
+}
+ol li{line-height: 24px;}
+p,li {
+	color: #274EB6;
+}
